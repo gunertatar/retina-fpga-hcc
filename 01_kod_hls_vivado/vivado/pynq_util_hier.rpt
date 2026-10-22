@@ -1,0 +1,54 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (lin64) Build 3526262 Mon Apr 18 15:47:01 MDT 2022
+| Date         : Mon Sep 28 01:40:14 2026
+| Host         : xilinx running 64-bit Ubuntu 20.04.6 LTS
+| Command      : report_utilization -hierarchical -hierarchical_depth 3 -file /home/xilinx/retina_rev/vivado_rpt/pynq_util_hier.rpt
+| Design       : retina_system_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Routed
+------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++--------------------------+--------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+|         Instance         |                   Module                   | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++--------------------------+--------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+| retina_system_wrapper    |                                      (top) |       7387 |       6598 |     112 |  677 | 8667 |     98 |      6 |         34 |
+|   retina_system_i        |                              retina_system |       7387 |       6598 |     112 |  677 | 8667 |     98 |      6 |         34 |
+|     axi_dma_0            |                  retina_system_axi_dma_0_0 |       1191 |       1095 |       8 |   88 | 1708 |      2 |      0 |          0 |
+|       U0                 |                                    axi_dma |       1191 |       1095 |       8 |   88 | 1708 |      2 |      0 |          0 |
+|     axi_dma_1            |                  retina_system_axi_dma_0_1 |       1316 |       1211 |       8 |   97 | 1885 |      2 |      0 |          0 |
+|       U0                 |                    axi_dma__parameterized1 |       1316 |       1211 |       8 |   97 | 1885 |      2 |      0 |          0 |
+|     axi_mem_intercon     |           retina_system_axi_mem_intercon_0 |       1269 |       1173 |       8 |   88 | 1451 |      0 |      0 |          0 |
+|       m00_couplers       |                   m00_couplers_imp_1JWIYLG |        244 |        236 |       8 |    0 |  314 |      0 |      0 |          0 |
+|       s00_couplers       |                   s00_couplers_imp_1NKYLZV |        145 |        125 |       0 |   20 |  223 |      0 |      0 |          0 |
+|       s01_couplers       |                    s01_couplers_imp_LL7DHR |        143 |        122 |       0 |   21 |  163 |      0 |      0 |          0 |
+|       s02_couplers       |                    s02_couplers_imp_GF1L4I |        145 |        125 |       0 |   20 |  223 |      0 |      0 |          0 |
+|       s03_couplers       |                   s03_couplers_imp_18HMYUE |        133 |        112 |       0 |   21 |  163 |      0 |      0 |          0 |
+|       xbar               |                       retina_system_xbar_3 |        460 |        454 |       0 |    6 |  365 |      0 |      0 |          0 |
+|     conv_ip_0            |                  retina_system_conv_ip_0_3 |       1797 |       1518 |       0 |  279 | 1461 |     94 |      2 |         32 |
+|       inst               |                                    conv_ip |       1797 |       1518 |       0 |  279 | 1461 |     94 |      2 |         32 |
+|     preprocess_0         |               retina_system_preprocess_0_1 |        463 |        367 |      88 |    8 |  567 |      0 |      4 |          2 |
+|       inst               |                                 preprocess |        463 |        367 |      88 |    8 |  567 |      0 |      4 |          2 |
+|     processing_system7_0 |       retina_system_processing_system7_0_0 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |          0 |
+|       inst               | processing_system7_v5_5_processing_system7 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |          0 |
+|     ps7_0_axi_periph     |           retina_system_ps7_0_axi_periph_0 |       1339 |       1223 |       0 |  116 | 1570 |      0 |      0 |          0 |
+|       m00_couplers       |                    m00_couplers_imp_90IW7Y |        356 |        299 |       0 |   57 |  427 |      0 |      0 |          0 |
+|       m01_couplers       |                   m01_couplers_imp_1FWGY8A |        356 |        299 |       0 |   57 |  427 |      0 |      0 |          0 |
+|       s00_couplers       |                    s00_couplers_imp_HOL04H |          0 |          0 |       0 |    0 |    0 |      0 |      0 |          0 |
+|       xbar               |                       retina_system_xbar_4 |        627 |        625 |       0 |    2 |  716 |      0 |      0 |          0 |
+|     rst_ps7_0_50M        |              retina_system_rst_ps7_0_50M_0 |         14 |         13 |       0 |    1 |   25 |      0 |      0 |          0 |
+|       U0                 |                             proc_sys_reset |         14 |         13 |       0 |    1 |   25 |      0 |      0 |          0 |
++--------------------------+--------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+

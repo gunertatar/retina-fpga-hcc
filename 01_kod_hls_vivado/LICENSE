@@ -1,0 +1,16 @@
+Copyright (c) 2026 Guner Tatar, Istanbul Medeniyet University
+
+This work (source code, HLS sources, bitstreams, trained weights, scripts and data files in this
+repository) is licensed under the Creative Commons Attribution-NonCommercial 4.0 International
+License (CC BY-NC 4.0). To view a copy of this license, visit
+https://creativecommons.org/licenses/by-nc/4.0/
+
+You are free to share and adapt the material for non-commercial purposes, provided that you give
+appropriate credit by citing:
+
+  G. Tatar, "Profiling-Guided FPGA Acceleration of Retinal Vessel Segmentation: HLS-Based Selective
+  Offloading and Input-Channel Tiling on Zynq SoC Platforms", High-Confidence Computing, Elsevier.
+
+Commercial use requires prior written permission from the author (guner.tatar@medeniyet.edu.tr).
+The retinal image datasets (DRIVE, STARE, CHASE_DB1, HRF) are NOT redistributed here and remain
+subject to the terms of their original providers.

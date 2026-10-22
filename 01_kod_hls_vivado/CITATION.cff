@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this material, please cite the paper below."
+title: "Profiling-Guided FPGA Acceleration of Retinal Vessel Segmentation: code, bitstreams and measurements"
+authors:
+  - family-names: Tatar
+    given-names: Guner
+    affiliation: "Istanbul Medeniyet University"
+    orcid: "https://orcid.org/0000-0002-3664-1366"
+license: CC-BY-NC-4.0
+repository-code: "https://github.com/gunertatar/retina-fpga-hcc"
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Tatar
+      given-names: Guner
+      orcid: "https://orcid.org/0000-0002-3664-1366"
+  title: "Profiling-Guided FPGA Acceleration of Retinal Vessel Segmentation: HLS-Based Selective Offloading and Input-Channel Tiling on Zynq SoC Platforms"
+  journal: "High-Confidence Computing"
+  publisher:
+    name: Elsevier
+  year: 2026
