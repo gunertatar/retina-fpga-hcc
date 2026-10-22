@@ -1,0 +1,24 @@
+[sudo] password for xilinx: PS GEMM: C/OpenMP
+  pl_preprocess       1.281 ms ± 0.018
+  pl_enc1           101.456 ms ± 0.019
+  ps_readback        23.060 ms ± 0.053
+  pool1              23.206 ms ± 0.053
+  enc2              505.348 ms ± 0.563
+  pool2              12.651 ms ± 0.059
+  enc3              478.426 ms ± 0.652
+  pool3               7.496 ms ± 0.039
+  bridge            475.644 ms ± 0.212
+  dec3.up            72.593 ms ± 0.098
+  dec3.concat         0.943 ms ± 0.013
+  dec3.conv         953.500 ms ± 0.315
+  dec2.up            76.258 ms ± 0.153
+  dec2.concat         1.791 ms ± 0.038
+  dec2.conv        1000.834 ms ± 0.186
+  dec1.up            82.943 ms ± 0.183
+  dec1.concat         5.971 ms ± 0.055
+  dec1.conv        1069.099 ms ± 0.516
+  out                 1.817 ms ± 0.039
+  sigmoid             0.836 ms ± 0.037
+  total            4899.357 ms ± 1.145
+  ps_only_enc1_numpy    382.018 ms ± 0.298
+DONE pynqz1 latency

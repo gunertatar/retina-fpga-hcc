@@ -1,0 +1,21 @@
+DRIVE Dice: FP32 vs Q-format conv_ip only        n=20 0.8154 -> 0.8156  Δ=+0.0002 [+0.0000,+0.0004]  Wilcoxon p=0.0266  t p=0.0405  dz=+0.49  TOST(±0.01) p=5.31e-28
+DRIVE Dice: FP32 vs deployed (original PS)       n=20 0.8154 -> 0.6960  Δ=-0.1195 [-0.1263,-0.1129]  Wilcoxon p=1.91e-06  t p=1.46e-18  dz=-7.68  TOST(±0.01) p=1
+DRIVE Dice: FP32 vs deployed (HW-aware PS)       n=20 0.8154 -> 0.8137  Δ=-0.0017 [-0.0034,+0.0001]  Wilcoxon p=0.04  t p=0.0809  dz=-0.41  TOST(±0.01) p=1.29e-08
+DRIVE AUC: FP32 vs Q-format conv_ip only         n=20 0.9764 -> 0.9765  Δ=+0.0000 [-0.0000,+0.0001]  Wilcoxon p=0.898  t p=0.468  dz=+0.17  TOST(±0.01) p=1.88e-39
+DRIVE AUC: FP32 vs deployed (original PS)        n=20 0.9764 -> 0.9391  Δ=-0.0373 [-0.0395,-0.0351]  Wilcoxon p=1.91e-06  t p=4.15e-18  dz=-7.26  TOST(±0.01) p=1
+DRIVE AUC: FP32 vs deployed (HW-aware PS)        n=20 0.9764 -> 0.9759  Δ=-0.0005 [-0.0011,+0.0001]  Wilcoxon p=0.0973  t p=0.119  dz=-0.37  TOST(±0.01) p=1.13e-17
+DRIVE Sens: FP32 vs Q-format conv_ip only        n=20 0.8168 -> 0.8167  Δ=-0.0000 [-0.0003,+0.0003]  Wilcoxon p=0.729  t p=0.955  dz=-0.01  TOST(±0.01) p=8.31e-24
+DRIVE Sens: FP32 vs deployed (original PS)       n=20 0.8168 -> 0.7108  Δ=-0.1060 [-0.1188,-0.0948]  Wilcoxon p=1.91e-06  t p=8.25e-13  dz=-3.73  TOST(±0.01) p=1
+DRIVE Sens: FP32 vs deployed (HW-aware PS)       n=20 0.8168 -> 0.8097  Δ=-0.0071 [-0.0095,-0.0043]  Wilcoxon p=0.000168  t p=5.25e-05  dz=-1.16  TOST(±0.01) p=0.0218
+DRIVE Spec: FP32 vs Q-format conv_ip only        n=20 0.9735 -> 0.9736  Δ=+0.0001 [+0.0000,+0.0001]  Wilcoxon p=0.0484  t p=0.0417  dz=+0.49  TOST(±0.01) p=2.77e-36
+DRIVE Spec: FP32 vs deployed (original PS)       n=20 0.9735 -> 0.9524  Δ=-0.0211 [-0.0225,-0.0197]  Wilcoxon p=1.91e-06  t p=6.6e-17  dz=-6.26  TOST(±0.01) p=1
+DRIVE Spec: FP32 vs deployed (HW-aware PS)       n=20 0.9735 -> 0.9744  Δ=+0.0009 [+0.0003,+0.0015]  Wilcoxon p=0.0073  t p=0.016  dz=+0.59  TOST(±0.01) p=4.02e-17
+DRIVE Acc: FP32 vs Q-format conv_ip only         n=20 0.9533 -> 0.9533  Δ=+0.0001 [+0.0000,+0.0001]  Wilcoxon p=0.0107  t p=0.0239  dz=+0.55  TOST(±0.01) p=1.42e-38
+DRIVE Acc: FP32 vs deployed (original PS)        n=20 0.9533 -> 0.9215  Δ=-0.0318 [-0.0334,-0.0301]  Wilcoxon p=1.91e-06  t p=3.18e-19  dz=-8.33  TOST(±0.01) p=1
+DRIVE Acc: FP32 vs deployed (HW-aware PS)        n=20 0.9533 -> 0.9531  Δ=-0.0002 [-0.0006,+0.0003]  Wilcoxon p=0.33  t p=0.548  dz=-0.14  TOST(±0.01) p=1.39e-19
+STARE Dice: FP32 vs FPGA (trained)               n=10 0.8308 -> 0.8264  Δ=-0.0044 [-0.0117,+0.0022]  Wilcoxon p=0.557  t p=0.273  dz=-0.37  TOST(±0.01) p=0.0843
+STARE AUC: FP32 vs FPGA (trained)                n=10 0.9872 -> 0.9861  Δ=-0.0011 [-0.0022,-0.0002]  Wilcoxon p=0.0488  t p=0.0645  dz=-0.67  TOST(±0.01) p=2.23e-08
+CHASE Dice: FP32 vs FPGA (trained)               n=14 0.7660 -> 0.7472  Δ=-0.0189 [-0.0345,-0.0056]  Wilcoxon p=0.0494  t p=0.0284  dz=-0.66  TOST(±0.01) p=0.866
+CHASE AUC: FP32 vs FPGA (trained)                n=14 0.9748 -> 0.9737  Δ=-0.0012 [-0.0024,-0.0000]  Wilcoxon p=0.135  t p=0.0854  dz=-0.50  TOST(±0.01) p=1.48e-09
+HRF Dice: FP32 vs FPGA (trained)                 n=21 0.7648 -> 0.7568  Δ=-0.0080 [-0.0096,-0.0060]  Wilcoxon p=1.81e-05  t p=7.13e-08  dz=-1.80  TOST(±0.01) p=0.0269
+HRF AUC: FP32 vs FPGA (trained)                  n=21 0.9772 -> 0.9733  Δ=-0.0039 [-0.0046,-0.0031]  Wilcoxon p=9.54e-07  t p=2.43e-09  dz=-2.22  TOST(±0.01) p=3.19e-13

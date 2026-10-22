@@ -1,0 +1,209 @@
+{
+ "scaling": {
+  "S64_B16": {
+   "S": 64,
+   "B": 16,
+   "macs": 143785984,
+   "params": 482449,
+   "enc1_macs": 10027008,
+   "enc1_share": 0.06973564266180492,
+   "enc1_buf_kb": 128.0,
+   "enc1_w_kb": 4.84375,
+   "skip_kb": 224.0,
+   "full_cycles_T32": 5804032,
+   "enc1_cycles_T32": 1179648,
+   "enc1_cycles_T8": 1769472
+  },
+  "S64_B32": {
+   "S": 64,
+   "B": 32,
+   "macs": 573833216,
+   "params": 1926433,
+   "enc1_macs": 38928384,
+   "enc1_share": 0.0678391959798995,
+   "enc1_buf_kb": 256.0,
+   "enc1_w_kb": 18.6875,
+   "skip_kb": 448.0,
+   "full_cycles_T32": 19075072,
+   "enc1_cycles_T32": 2359296,
+   "enc1_cycles_T8": 5898240
+  },
+  "S64_B64": {
+   "S": 64,
+   "B": 64,
+   "macs": 2292711424,
+   "params": 7699009,
+   "enc1_macs": 153354240,
+   "enc1_share": 0.06688772010061743,
+   "enc1_buf_kb": 512.0,
+   "enc1_w_kb": 73.375,
+   "skip_kb": 896.0,
+   "full_cycles_T32": 73932800,
+   "enc1_cycles_T32": 7077888,
+   "enc1_cycles_T8": 21233664
+  },
+  "S128_B16": {
+   "S": 128,
+   "B": 16,
+   "macs": 575143936,
+   "params": 482449,
+   "enc1_macs": 40108032,
+   "enc1_share": 0.06973564266180492,
+   "enc1_buf_kb": 512.0,
+   "enc1_w_kb": 4.84375,
+   "skip_kb": 896.0,
+   "full_cycles_T32": 23216128,
+   "enc1_cycles_T32": 4718592,
+   "enc1_cycles_T8": 7077888
+  },
+  "S128_B32": {
+   "S": 128,
+   "B": 32,
+   "macs": 2295332864,
+   "params": 1926433,
+   "enc1_macs": 155713536,
+   "enc1_share": 0.0678391959798995,
+   "enc1_buf_kb": 1024.0,
+   "enc1_w_kb": 18.6875,
+   "skip_kb": 1792.0,
+   "full_cycles_T32": 76300288,
+   "enc1_cycles_T32": 9437184,
+   "enc1_cycles_T8": 23592960
+  },
+  "S128_B64": {
+   "S": 128,
+   "B": 64,
+   "macs": 9170845696,
+   "params": 7699009,
+   "enc1_macs": 613416960,
+   "enc1_share": 0.06688772010061743,
+   "enc1_buf_kb": 2048.0,
+   "enc1_w_kb": 73.375,
+   "skip_kb": 3584.0,
+   "full_cycles_T32": 295731200,
+   "enc1_cycles_T32": 28311552,
+   "enc1_cycles_T8": 84934656
+  },
+  "S256_B16": {
+   "S": 256,
+   "B": 16,
+   "macs": 2300575744,
+   "params": 482449,
+   "enc1_macs": 160432128,
+   "enc1_share": 0.06973564266180492,
+   "enc1_buf_kb": 2048.0,
+   "enc1_w_kb": 4.84375,
+   "skip_kb": 3584.0,
+   "full_cycles_T32": 92864512,
+   "enc1_cycles_T32": 18874368,
+   "enc1_cycles_T8": 28311552
+  },
+  "S256_B32": {
+   "S": 256,
+   "B": 32,
+   "macs": 9181331456,
+   "params": 1926433,
+   "enc1_macs": 622854144,
+   "enc1_share": 0.0678391959798995,
+   "enc1_buf_kb": 4096.0,
+   "enc1_w_kb": 18.6875,
+   "skip_kb": 7168.0,
+   "full_cycles_T32": 305201152,
+   "enc1_cycles_T32": 37748736,
+   "enc1_cycles_T8": 94371840
+  },
+  "S256_B64": {
+   "S": 256,
+   "B": 64,
+   "macs": 36683382784,
+   "params": 7699009,
+   "enc1_macs": 2453667840,
+   "enc1_share": 0.06688772010061743,
+   "enc1_buf_kb": 8192.0,
+   "enc1_w_kb": 73.375,
+   "skip_kb": 14336.0,
+   "full_cycles_T32": 1182924800,
+   "enc1_cycles_T32": 113246208,
+   "enc1_cycles_T8": 339738624
+  }
+ },
+ "stages": [
+  {
+   "name": "enc1",
+   "macs": 38928384,
+   "params": 9632,
+   "cycles_T32": 2359296,
+   "cycles_T8": 5898240
+  },
+  {
+   "name": "enc2",
+   "macs": 56623104,
+   "params": 55552,
+   "cycles_T32": 1769472,
+   "cycles_T8": 7077888
+  },
+  {
+   "name": "enc3",
+   "macs": 56623104,
+   "params": 221696,
+   "cycles_T32": 1769472,
+   "cycles_T8": 7077888
+  },
+  {
+   "name": "bridge",
+   "macs": 56623104,
+   "params": 885760,
+   "cycles_T32": 1769472,
+   "cycles_T8": 7077888
+  },
+  {
+   "name": "dec3.up",
+   "macs": 8388608,
+   "params": 131200,
+   "cycles_T32": 262144,
+   "cycles_T8": 1048576
+  },
+  {
+   "name": "dec3",
+   "macs": 113246208,
+   "params": 442880,
+   "cycles_T32": 3538944,
+   "cycles_T8": 14155776
+  },
+  {
+   "name": "dec2.up",
+   "macs": 8388608,
+   "params": 32832,
+   "cycles_T32": 262144,
+   "cycles_T8": 1048576
+  },
+  {
+   "name": "dec2",
+   "macs": 113246208,
+   "params": 110848,
+   "cycles_T32": 3538944,
+   "cycles_T8": 14155776
+  },
+  {
+   "name": "dec1.up",
+   "macs": 8388608,
+   "params": 8224,
+   "cycles_T32": 262144,
+   "cycles_T8": 1048576
+  },
+  {
+   "name": "dec1",
+   "macs": 113246208,
+   "params": 27776,
+   "cycles_T32": 3538944,
+   "cycles_T8": 14155776
+  },
+  {
+   "name": "out",
+   "macs": 131072,
+   "params": 33,
+   "cycles_T32": 4096,
+   "cycles_T8": 16384
+  }
+ ]
+}

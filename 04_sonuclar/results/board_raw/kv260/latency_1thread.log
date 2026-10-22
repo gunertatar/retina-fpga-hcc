@@ -1,0 +1,24 @@
+PS GEMM: C/OpenMP
+  pl_preprocess       0.214 ms ± 0.002
+  pl_enc1            11.634 ms ± 0.002
+  ps_readback         3.832 ms ± 0.051
+  pool1              10.652 ms ± 0.025
+  enc2              166.430 ms ± 1.704
+  pool2               5.772 ms ± 0.022
+  enc3              149.516 ms ± 0.207
+  pool3               3.315 ms ± 0.011
+  bridge            165.001 ms ± 0.260
+  dec3.up            25.382 ms ± 0.079
+  dec3.concat         0.172 ms ± 0.014
+  dec3.conv         296.269 ms ± 0.968
+  dec2.up            23.815 ms ± 0.030
+  dec2.concat         0.314 ms ± 0.012
+  dec2.conv         315.028 ms ± 7.656
+  dec1.up            26.129 ms ± 0.320
+  dec1.concat         0.614 ms ± 0.019
+  dec1.conv         398.872 ms ± 8.223
+  out                 3.937 ms ± 0.040
+  sigmoid             0.355 ms ± 0.005
+  total            1607.697 ms ± 6.577
+  ps_only_enc1_numpy    139.147 ms ± 4.318
+DONE kv260 latency

@@ -1,0 +1,10 @@
+[sudo] password for xilinx: PS GEMM: C/OpenMP
+PHASE idle START 00:07:11 (60s)  <-- read the external meter now if applicable
+PHASE idle END   n=600 (100.16 ms/iter)
+PHASE pl_only START 00:08:11 (60s)  <-- read the external meter now if applicable
+PHASE pl_only END   n=586 (102.42 ms/iter)
+PHASE ps_only START 00:09:11 (60s)  <-- read the external meter now if applicable
+PHASE ps_only END   n=12 (5097.46 ms/iter)
+PHASE full START 00:10:12 (60s)  <-- read the external meter now if applicable
+PHASE full END   n=12 (5267.60 ms/iter)
+DONE pynqz1 power

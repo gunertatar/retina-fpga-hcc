@@ -1,0 +1,8 @@
+{
+ "n": 200,
+ "preprocess_bit_exact": 200,
+ "conv_ip_bit_exact_given_board_pre": 200,
+ "end_to_end_bit_exact": 200,
+ "mismatch_rows": [],
+ "values_compared": 26214400
+}

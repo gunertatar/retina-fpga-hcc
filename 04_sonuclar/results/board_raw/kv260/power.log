@@ -1,0 +1,46 @@
+PS GEMM: C/OpenMP
+PHASE idle START 16:40:55 (40s)  <-- read the external meter now if applicable
+PHASE idle END   n=400 (100.13 ms/iter)
+PHASE pl_only START 16:41:35 (40s)  <-- read the external meter now if applicable
+PHASE pl_only END   n=3404 (11.75 ms/iter)
+PHASE ps_only START 16:42:15 (60s)  <-- read the external meter now if applicable
+PHASE ps_only END   n=124 (486.51 ms/iter)
+PHASE full START 16:43:15 (60s)  <-- read the external meter now if applicable
+PHASE full END   n=121 (499.78 ms/iter)
+{
+ "iters": {
+  "pl_only": [
+   3404,
+   40.00475192070007
+  ],
+  "ps_only": [
+   124,
+   60.32688570022583
+  ],
+  "full": [
+   121,
+   60.47355318069458
+  ]
+ },
+ "idle_W": {
+  "mean": 3.3622193877551028,
+  "std": 0.02563823737996994,
+  "n": 784
+ },
+ "pl_only_W": {
+  "mean": 3.7376363636363634,
+  "std": 0.013377543783742608,
+  "n": 440
+ },
+ "ps_only_W": {
+  "mean": 4.318611584327086,
+  "std": 0.2103733131958178,
+  "n": 1174
+ },
+ "full_W": {
+  "mean": 4.313191489361702,
+  "std": 0.23679155375048544,
+  "n": 1175
+ }
+}
+DONE kv260 power
